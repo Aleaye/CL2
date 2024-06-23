@@ -16,10 +16,12 @@ public class ControladorUsuario extends HttpServlet {
      * @see HttpServlet#HttpServlet()
      */
     public ControladorUsuario() {
-        super();
+      
         // TODO Auto-generated constructor stub
     }
-
+public void init(){
+	UsuarioDao = new UsuarioDaoImpl();
+}
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
